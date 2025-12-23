@@ -4,40 +4,42 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Forms - Lets Learn it</title>
+    <title>Inline and Block Elements - HTML</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-    <h1>Form to apply for sigam web devlopmement course - TA</h1>
-    <form action="post">
+    <P>hey I am a Para</P>
+    <a href="https://google.com">Google</a>
+    <div>I am a Block Element</div>
+    <span>I am a Span and I am Inline</span>
+    <a href="">yes he is Inline</a>
+    <form action="null">
         <div>
-
-            <label for="username">Enter Your Username:</label>
-            <input type="text" id="username" name="username" placeholder="Enter your username" autofocus>
-        </div>
-        <div>
-            <input type="Radio" id="male" name="gender" value="male">
-            <label for="male">Male</label>
-            <input type="Radio" id="female" name="gender" value="female">
-            <label for="female">Female</label>
-        </div>
-        <div>
-            <input type="checkbox" id="subscribe" name="subscribe" value="yes">
-            <label for="subscribe">Subscribe to newsletter</label>
-        </div>
-        <div>
-            <label for="comment">Enter your comment:</label>
-            <br>
-            <textarea id="comment" name="comment" rows="4" cols="50">Enter your comment here...</textarea>
-        </div>
-
-        <div>
-            <select name="fruits">
-                <option value="apple">Apple</option>
-                <option value="banana">Banana</option>
-                <option value="cherry">Cherry</option>
-            </select>
-        </div>
+            <div>
+                <label for="username">enter your name:</label>
+                <div>
+                    <input type="text" id="username" />
+                    <div>
+                        <div>
+                            <div>
+                                <label for="usercity">enter your city:</label>
+                                <div>
+                                    <label for="usercity">city</label>
+                                </div>
+                                <input type="text">id="usercity" />
+                            </div>
+                        </div>
+                        <div>
+                            <div>
+                                <label for="userpincode">pincode</label>
+                            </div>
+                            <input type="text" id="userpincode" />
+                    </div>
+                    <div>
+                        <input type="submit" />
+                        <input type="reset" />
+                    </div>
     </form>
 
 </body>
