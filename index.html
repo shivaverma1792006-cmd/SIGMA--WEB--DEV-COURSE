@@ -4,37 +4,40 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>CSS boxmodel</title>
+    <style>
+        *{
+            margin:0;
+            padding: 0;
+        }
+    </style>
+    <style>
+        .box {
+            background-color: aqua;
+        }
+        .box1{
+            color: yellow;
+            padding: 10px;
+            margin: 35px;
+            border: 2px solid blue;
+            height: 200px;
+            box-sizing: border-box;
+        }
+        .box2{
+            color: red;
+              padding: 10px;
+            margin: 25px;
+            border: 2px solid black;
+            height: 200px;
+            box-sizing: border-box;
+        }
+    </style>
 </head>
 
 <body>
-    3>4
-    this is the code for paragraph &lt;p&gt;&lt;/p&gt;
-    <pre>
-        <pre>this is a para</pre>
+    <div class="box box1">I am a box</div>
+    <div class="box box2">I am another box</div>
 
-
-
-    this is the after few new lines and some more
-    </pre>
-    copyright &copy;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;codewithharry
-    <blockquote cite="source-url">
-        Quatation text here.
-    </blockquote>
-    <h1>This is the HTML boiler plate code</h1>
-    <pre><code>
-    &lt;!DOCTYPE html&gt;
-&lt;html lang="en"&gt;
-&lt;head&gt;
-&lt;meta charset="UTF-8"&gt;
-&lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;
-&lt;title&gt;Document&lt;/title&gt;
-&lt;/head&gt;
-&lt;body&gt;
-
-&lt;/body&gt;
-&lt;/html&gt;   
-    </code></pre>
 </body>
 
 </html>
