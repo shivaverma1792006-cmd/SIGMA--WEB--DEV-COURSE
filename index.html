@@ -1,13 +1,45 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="Description" content="this is the page about content about shiva - the sigma">
-    <title>About Shiva - CodeWithShiva</title>
+    <title>Forms - Lets Learn it</title>
 </head>
+
 <body>
-    <h1>shiva</h1>
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim nihil odit cupiditate amet ex beatae repudiandae fugiat similique et, quisquam dolorem explicabo exercitationem praesentium quidem molestiae ipsum! Exercitationem, fuga, deserunt impedit molestiae cum aliquam veniam, expedita deleniti tenetur ducimus modi nam? Corporis nesciunt perferendis molestias.</p>
+    <h1>Form to apply for sigam web devlopmement course - TA</h1>
+    <form action="post">
+        <div>
+
+            <label for="username">Enter Your Username:</label>
+            <input type="text" id="username" name="username" placeholder="Enter your username" autofocus>
+        </div>
+        <div>
+            <input type="Radio" id="male" name="gender" value="male">
+            <label for="male">Male</label>
+            <input type="Radio" id="female" name="gender" value="female">
+            <label for="female">Female</label>
+        </div>
+        <div>
+            <input type="checkbox" id="subscribe" name="subscribe" value="yes">
+            <label for="subscribe">Subscribe to newsletter</label>
+        </div>
+        <div>
+            <label for="comment">Enter your comment:</label>
+            <br>
+            <textarea id="comment" name="comment" rows="4" cols="50">Enter your comment here...</textarea>
+        </div>
+
+        <div>
+            <select name="fruits">
+                <option value="apple">Apple</option>
+                <option value="banana">Banana</option>
+                <option value="cherry">Cherry</option>
+            </select>
+        </div>
+    </form>
+
 </body>
+
 </html>
