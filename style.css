@@ -1,3 +1,13 @@
-controls{
-    background-color: rgb(223, 157, 223);
+p{
+    background-color: aquamarine;
+}
+
+a{
+    background-color: rgb(212, 171, 137)
+}
+div{
+    background-color: yellow;
+}
+span{
+    background-color: rgb(207, 176, 235);
 }
