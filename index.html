@@ -4,36 +4,59 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Css Variables</title>
+    <style>
+        :root {
+            --color: rgb(60, 0, 255);
+            --seccolor: rgb(174, 170, 222);
+            --defpad: 23px;
+            --defop: 0.4;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        .nav {
+            background-color: var(--color)
+        }
+
+        ul {
+            display: flex;
+        }
+
+        ul li {
+            opacity:var(--defop)
+            list-style: none;
+            padding: var(--defpad);
+            border: 2px solid var(--seccolor);
+        }
+
+        ul li:first-child {
+            background-color: var(--color, blue);
+        }
+
+        .container {
+            /* --color: rgb(255, 162, 0); */
+
+            background-color: var(--color);
+        }
+    </style>
 </head>
 
 <body>
-    <div style="border-radius: 10px; padding: 10px; width: 300px; height: 200px; ">
-        <img src="https://images.pexels.com/photos/27060872/pexels-photo-27060872.jpeg" alt="Sample Image"
-            style="width: 100%; height: 200px; border-radius: 10px;">
+    <div class="nav">
+        <li>Home</li>
+        <li>About</li>
+        <li>Contact</li>
     </div>
-
-    <div>
-        <span>
-            <button>Nature</button>
-            <button>Lake</button>
-        </span>
-        <h2>Lago di braies</h2>
-        <p>
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Mollitia, non sint asperiores perferendis
-            cupiditate unde, expedita nostrum quidem id, omnis debitis sapiente aspernatur. Laudantium quibusdam earum
-            quaerat!
-        </p>
-
+    <div class="container">
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Blanditiis inventore asperiores quam odio voluptatem
+        iste dolores, porro excepturi mollitia distinctio sed eligendi, odit impedit voluptate non obcaecati
+        reprehenderit nisi eveniet saepe, repellat libero. Reiciendis eligendi corporis quam necessitatibus laudantium
+        aspernatur nisi? Debitis odio neque illo?
     </div>
-
-    <div>
-        <button>Read More</button>
-
-
-
-    </div>
-
 </body>
 
 </html>
