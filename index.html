@@ -4,58 +4,147 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Css Variables</title>
+    <title>CSS Card Design</title>
     <style>
-        :root {
-            --color: rgb(60, 0, 255);
-            --seccolor: rgb(174, 170, 222);
-            --defpad: 23px;
-            --defop: 0.4;
-        }
+        @import url('https://fonts.googleapis.com/css2?family=Baloo+Bhai+2:wght@400..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
         * {
             margin: 0;
             padding: 0;
         }
 
-        .nav {
-            background-color: var(--color)
-        }
-
-        ul {
+        body {
+            background-color: gray;
+            padding: 45px;
             display: flex;
         }
 
-        ul li {
-            opacity:var(--defop)
-            list-style: none;
-            padding: var(--defpad);
-            border: 2px solid var(--seccolor);
+        .card {
+            background-color: white;
+            width: 198px;
+            border-radius: 7px;
+            padding: 0 0 34px 0;
+            margin: 4px;
+
         }
 
-        ul li:first-child {
-            background-color: var(--color, blue);
+        .image {
+            padding: 5px;
         }
 
-        .container {
-            /* --color: rgb(255, 162, 0); */
+        .image img {
+            border-radius: 7px;
+        }
 
-            background-color: var(--color);
+        .content {
+            padding: 7px 13px;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        .content p {
+            font-size: 9px;
+            color: gray;
+        }
+
+        .capsules {
+            padding: 0 28px 0 14px;
+        }
+
+        .capsules span {
+            border: 1px solid gray;
+            padding: 0px 0px;
+            border-radius: 7px;
+            font-size: 8px;
+            font-family: 'baloo bhai 2', sans-serif;
+
+        }
+
+        .button {
+            text-align: center
+        }
+
+        .button button {
+            padding: 7px 15px;
+            border-radius: 15px;
+            background-color: rgb(195, 215, 222);
+            color: rgb(33, 160, 239);
+            font-size: 10px;
+            margin-top: 7px;
+            border: none;
+            font-weight: bold;
+            cursor: pointer;
+        }
+
+        .button button:hover{
+            background-color: rgb(205, 216, 222);
+            color: rgb(120, 169, 200);
         }
     </style>
 </head>
 
 <body>
-    <div class="nav">
-        <li>Home</li>
-        <li>About</li>
-        <li>Contact</li>
+
+    <div class="card">
+        <div class="image">
+            <img width="188" height="150" src="https://images.pexels.com/photos/3880179/pexels-photo-3880179.jpeg"
+                alt="">
+        </div>
+
+        <div class="capsules">
+            <span>Nature</span>
+            <span>Lake</span>
+        </div>
+        <div class="content">
+            <h2>Harry</h2>
+            <p>Lorem ipsum dolorsit amet consectetur adipisicing elit. Saepe, illo sunt? Placeat cum nobis quia
+                verosequi assumenda reiciendis voluptas quisquam provident? Ipsum.</p>
+        </div>
+        <div class="button">
+            <button>Read More</button>
+        </div>
+
     </div>
-    <div class="container">
-        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Blanditiis inventore asperiores quam odio voluptatem
-        iste dolores, porro excepturi mollitia distinctio sed eligendi, odit impedit voluptate non obcaecati
-        reprehenderit nisi eveniet saepe, repellat libero. Reiciendis eligendi corporis quam necessitatibus laudantium
-        aspernatur nisi? Debitis odio neque illo?
+
+    <div class="card">
+        <div class="image">
+            <img width="188" height="150" src="https://images.pexels.com/photos/3880179/pexels-photo-3880179.jpeg"
+                alt="">
+        </div>
+
+        <div class="capsules">
+            <span>Nature</span>
+            <span>Lake</span>
+        </div>
+        <div class="content">
+            <h2>Harry</h2>
+            <p>Lorem ipsum dolorsit amet consectetur adipisicing elit. Saepe, illo sunt? Placeat cum nobis quia
+                verosequi assumenda reiciendis voluptas quisquam provident? Ipsum.</p>
+        </div>
+        <div class="button">
+            <button>Read More</button>
+        </div>
+
+    </div>
+
+    <div class="card">
+        <div class="image">
+            <img width="188" height="150" src="https://images.pexels.com/photos/3880179/pexels-photo-3880179.jpeg"
+                alt="">
+        </div>
+
+        <div class="capsules">
+            <span>Nature</span>
+            <span>Lake</span>
+        </div>
+        <div class="content">
+            <h2>Harry</h2>
+            <p>Lorem ipsum dolorsit amet consectetur adipisicing elit. Saepe, illo sunt? Placeat cum nobis quia
+                verosequi assumenda reiciendis voluptas quisquam provident? Ipsum.</p>
+        </div>
+        <div class="button">
+            <button>Read More</button>
+        </div>
+
     </div>
 </body>
 
