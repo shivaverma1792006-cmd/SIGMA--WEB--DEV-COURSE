@@ -4,65 +4,64 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>More on CSS Selectors</title>
+    <title>MultiColor Website</title>
     <style>
-        /* .box:first-child {
-            background-color: red;
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+    </style>
+    <style>
+        /* :root {
+            --primary-color: #b16fe4d9;
+            --text-color: white;
+            --secondary-color: #cfcad9d9;
         } */
 
-        /* .box:first-line{
-            color:yellow;
-        } */
-        /* .boxes * {
-            color: blue;
-            border: 2px solid black;
+        :root {
+            --primary-color: #150343d9;
+            --text-color: white;
+            --secondary-color: #3bbce0d9;
         }
 
-        p,a,.box,  [data-color="primary"] {
-            padding-top: 45px;
-        } */
-
-        /* .box:nth-child(odd){
-            background-color: blue;
-        } */
-
-        /* .box:nth-last-child(2){
-            background-color: red;
-        } */
-
-        .boxes::before{
-            content:"Harry is good";
-            color: blue;
-        }
-        .boxes::after{
-            content:"Sigma Course is also Good";
-            color: red;
+        body {
+            background-color: var(--secondary-color);
         }
 
-        ::selection{
-            background-color: black;
-            color:aqua;
+        * {
+            margin: 0;
+            padding: 0;
+            font-family: 'poppins', sans-serif;
         }
 
-        .box.box::first-letter{
-            color:peru;
-            font-size:45px
+        nav {
+            background-color: var(--primary-color);
+            padding: 12px 0;
         }
 
-        input::placeholder{
-            color: rgb(85, 85, 96);
+        ul li {
+            list-style: none;
+            display: inline;
+            padding: 23px;
+            font-weight: bolder;
+            color: var(--text-color);
         }
-        
+
+        ul li a {
+            color: var(--text-color);
+            text-decoration: none;
+        }
     </style>
 </head>
 
 <body>
-    <div class="boxes">
-        <div data-color="primary" class="box">I am first box</div>
-        <div class="box">Hey i am a box</div>
-        <div class="box">Hey i am a box</div>
-        <input type="text"placeholder="Type your name here">
-    </div>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="/Home">Home</a></li>
+                <li><a href="/about">About</a></li>
+                <li><a href="/services">Services</a></li>
+                <li><a href="/contact">Contact us</a></li>
+            </ul>
+        </nav>
+    </header>
 </body>
 
 </html>
